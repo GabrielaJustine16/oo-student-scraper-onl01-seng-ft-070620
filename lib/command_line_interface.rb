@@ -1,11 +1,10 @@
-  
 require_relative "../lib/scraper.rb"
 require_relative "../lib/student.rb"
 require 'nokogiri'
 require 'colorize'
 
 class CommandLineInterface
-  BASE_PATH = "https://learn-co-curriculum.github.io/student-scraper-test-page/"
+  BASE_PATH = "./fixtures/student-site/"
 
   def run
     make_students
